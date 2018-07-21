@@ -7769,7 +7769,7 @@ static struct of_device_id smbchg_match_table[] = {
 };
 
 #define DC_MA_MIN 300
-#define DC_MA_MAX 2000
+#define DC_MA_MAX 3000
 #define OF_PROP_READ(chip, prop, dt_property, retval, optional)		\
 do {									\
 	if (retval)							\
@@ -7884,7 +7884,7 @@ err:
 }
 
 #define DEFAULT_VLED_MAX_UV		3500000
-#define DEFAULT_FCC_MA			2000
+#define DEFAULT_FCC_MA			3000
 static int smb_parse_dt(struct smbchg_chip *chip)
 {
 	int rc = 0, ocp_thresh = -EINVAL;
